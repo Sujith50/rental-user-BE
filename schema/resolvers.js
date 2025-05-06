@@ -1,7 +1,7 @@
 import { db } from "../db.js";
 import nodemailer from "nodemailer";
 import jwt from "jsonwebtoken";
-import bcrypt, { hash } from "bcrypt";
+import bcrypt, { hash } from "bcryptjs";
 import { v4 as uuidv4 } from "uuid";
 
 const admindetails = db.collection("adminDetails");
